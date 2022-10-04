@@ -13,6 +13,7 @@ function App() {
       <CanvasSolution image={image} setImage={setImage} selectedImg={selectedImg} />
       <div className="mt-2 flex space-x-1">
         <img
+          alt="bg-1"
           src="bg-img1.png"
           className={`w-[360px] h-[240px] border-2 ${selectedImg === 1 && "border-red-500"}`}
           onClick={() => {
@@ -21,6 +22,7 @@ function App() {
           }}
         />
         <img
+          alt="bg-2"
           src="bg-img2.png"
           className={`w-[360px] h-[240px] border-2 ${selectedImg === 2 && "border-red-500"}`}
           onClick={() => {
