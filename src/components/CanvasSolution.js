@@ -51,7 +51,7 @@ const CanvasSolution = ({ image, selectedImg, setImage }) => {
       bg.onload = () => {
         ctx.drawImage(bg, 0, 0, canvas.width, canvas.height);
       };
-    }
+    } // eslint-disable-next-line
   }, [image]);
 
   useEffect(() => {
@@ -82,7 +82,7 @@ const CanvasSolution = ({ image, selectedImg, setImage }) => {
         drawImageProp(ctx, draw, 188, 40, draw.width * widthRatio, draw.height * heightRatio);
         ctx.drawImage(bg, 0, 0, canvas.width, canvas.height);
       }
-    };
+    }; // eslint-disable-next-line
   }, [selectedImg]);
 
   return (
