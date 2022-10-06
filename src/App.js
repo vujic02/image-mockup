@@ -30,6 +30,15 @@ function App() {
             setImage(image);
           }}
         />
+        <img
+          alt="bg-3"
+          src="bg-img3.png"
+          className={`w-[360px] h-[240px] border-2 ${selectedImg === 3 && "border-red-500"}`}
+          onClick={() => {
+            setSelectedImg(3);
+            setImage(image);
+          }}
+        />
       </div>
       <form
         onSubmit={(e) => {

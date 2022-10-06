@@ -32,7 +32,7 @@ const CanvasSolution = ({ image, selectedImg, setImage }) => {
           let widthRatio = maxSizeW / draw.width,
             heightRatio = maxSizeH / draw.height;
 
-          ctx.clearRect(285, 131, 148, 180);
+          ctx.clearRect(285, 131, maxSizeW, maxSizeH);
           drawImageProp(ctx, draw, 285, 131, draw.width * widthRatio, draw.height * heightRatio);
           ctx.drawImage(bg, 0, 0, canvas.width, canvas.height);
         } else if (selectedImg === 2) {
@@ -41,8 +41,17 @@ const CanvasSolution = ({ image, selectedImg, setImage }) => {
           let widthRatio = maxSizeW / draw.width,
             heightRatio = maxSizeH / draw.height;
 
-          ctx.clearRect(188, 40, 346, 426);
+          ctx.clearRect(188, 40, maxSizeW, maxSizeH);
           drawImageProp(ctx, draw, 188, 40, draw.width * widthRatio, draw.height * heightRatio);
+          ctx.drawImage(bg, 0, 0, canvas.width, canvas.height);
+        } else if (selectedImg === 3) {
+          let maxSizeW = 138;
+          let maxSizeH = 84;
+          let widthRatio = maxSizeW / draw.width,
+            heightRatio = maxSizeH / draw.height;
+
+          ctx.clearRect(306, 268, maxSizeW, maxSizeH);
+          drawImageProp(ctx, draw, 306, 268, draw.width * widthRatio, draw.height * heightRatio);
           ctx.drawImage(bg, 0, 0, canvas.width, canvas.height);
         }
       };
@@ -80,6 +89,14 @@ const CanvasSolution = ({ image, selectedImg, setImage }) => {
           heightRatio = maxSizeH / draw.height;
 
         drawImageProp(ctx, draw, 188, 40, draw.width * widthRatio, draw.height * heightRatio);
+        ctx.drawImage(bg, 0, 0, canvas.width, canvas.height);
+      } else if (selectedImg === 3) {
+        let maxSizeW = 138;
+        let maxSizeH = 84;
+        let widthRatio = maxSizeW / draw.width,
+          heightRatio = maxSizeH / draw.height;
+
+        drawImageProp(ctx, draw, 306, 268, draw.width * widthRatio, draw.height * heightRatio);
         ctx.drawImage(bg, 0, 0, canvas.width, canvas.height);
       }
     }; // eslint-disable-next-line
