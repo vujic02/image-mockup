@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="h-full flex flex-col justify-center items-center mb-16">
       <CanvasSolution image={image} setImage={setImage} selectedImg={selectedImg} />
-      <div className="mt-2 flex space-x-1">
+      <div className="mt-2 grid grid-cols-3 gap-2">
         <img
           alt="bg-1"
           src="bg-img1.png"
@@ -36,6 +36,33 @@ function App() {
           className={`w-[360px] h-[240px] border-2 ${selectedImg === 3 && "border-red-500"}`}
           onClick={() => {
             setSelectedImg(3);
+            setImage(image);
+          }}
+        />
+        <img
+          alt="bg-4"
+          src="bg-img4.png"
+          className={`w-[360px] h-[240px] border-2 ${selectedImg === 4 && "border-red-500"}`}
+          onClick={() => {
+            setSelectedImg(4);
+            setImage(image);
+          }}
+        />
+        <img
+          alt="bg-5"
+          src="bg-img5.png"
+          className={`w-[360px] h-[240px] border-2 ${selectedImg === 5 && "border-red-500"}`}
+          onClick={() => {
+            setSelectedImg(5);
+            setImage(image);
+          }}
+        />
+        <img
+          alt="bg-6"
+          src="bg-img6.png"
+          className={`w-[360px] h-[240px] border-2 ${selectedImg === 6 && "border-red-500"}`}
+          onClick={() => {
+            setSelectedImg(6);
             setImage(image);
           }}
         />

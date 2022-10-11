@@ -53,6 +53,33 @@ const CanvasSolution = ({ image, selectedImg, setImage }) => {
           ctx.clearRect(306, 268, maxSizeW, maxSizeH);
           drawImageProp(ctx, draw, 306, 268, draw.width * widthRatio, draw.height * heightRatio);
           ctx.drawImage(bg, 0, 0, canvas.width, canvas.height);
+        } else if (selectedImg === 4) {
+          let maxSizeW = 283;
+          let maxSizeH = 363;
+          let widthRatio = maxSizeW / draw.width,
+            heightRatio = maxSizeH / draw.height;
+
+          ctx.clearRect(349, 62, maxSizeW, maxSizeH);
+          drawImageProp(ctx, draw, 349, 62, draw.width * widthRatio, draw.height * heightRatio);
+          ctx.drawImage(bg, 0, 0, canvas.width, canvas.height);
+        } else if (selectedImg === 5) {
+          let maxSizeW = 150;
+          let maxSizeH = 210;
+          let widthRatio = maxSizeW / draw.width,
+            heightRatio = maxSizeH / draw.height;
+
+          ctx.clearRect(274, 122, maxSizeW, maxSizeH);
+          drawImageProp(ctx, draw, 274, 122, draw.width * widthRatio, draw.height * heightRatio);
+          ctx.drawImage(bg, 0, 0, canvas.width, canvas.height);
+        } else if (selectedImg === 6) {
+          let maxSizeW = 287;
+          let maxSizeH = 362;
+          let widthRatio = maxSizeW / draw.width,
+            heightRatio = maxSizeH / draw.height;
+
+          ctx.clearRect(217, 51, maxSizeW, maxSizeH);
+          drawImageProp(ctx, draw, 217, 51, draw.width * widthRatio, draw.height * heightRatio);
+          ctx.drawImage(bg, 0, 0, canvas.width, canvas.height);
         }
       };
     } else {
@@ -97,6 +124,30 @@ const CanvasSolution = ({ image, selectedImg, setImage }) => {
           heightRatio = maxSizeH / draw.height;
 
         drawImageProp(ctx, draw, 306, 268, draw.width * widthRatio, draw.height * heightRatio);
+        ctx.drawImage(bg, 0, 0, canvas.width, canvas.height);
+      } else if (selectedImg === 4) {
+        let maxSizeW = 281;
+        let maxSizeH = 360;
+        let widthRatio = maxSizeW / draw.width,
+          heightRatio = maxSizeH / draw.height;
+
+        drawImageProp(ctx, draw, 349, 62, draw.width * widthRatio, draw.height * heightRatio);
+        ctx.drawImage(bg, 0, 0, canvas.width, canvas.height);
+      } else if (selectedImg === 5) {
+        let maxSizeW = 150;
+        let maxSizeH = 210;
+        let widthRatio = maxSizeW / draw.width,
+          heightRatio = maxSizeH / draw.height;
+
+        drawImageProp(ctx, draw, 274, 122, draw.width * widthRatio, draw.height * heightRatio);
+        ctx.drawImage(bg, 0, 0, canvas.width, canvas.height);
+      } else if (selectedImg === 6) {
+        let maxSizeW = 285;
+        let maxSizeH = 360;
+        let widthRatio = maxSizeW / draw.width,
+          heightRatio = maxSizeH / draw.height;
+
+        drawImageProp(ctx, draw, 217, 51, draw.width * widthRatio, draw.height * heightRatio);
         ctx.drawImage(bg, 0, 0, canvas.width, canvas.height);
       }
     }; // eslint-disable-next-line
